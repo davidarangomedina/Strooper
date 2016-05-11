@@ -100,7 +100,8 @@
             android:orientation="vertical"
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
-            android:background="#303F9F">
+            android:background="#303F9F"
+            android:id="@+id/lnrFondo">
 
             <LinearLayout
                 android:orientation="vertical"
@@ -136,7 +137,7 @@
                 android:layout_height="wrap_content"
                 android:textAppearance="?android:attr/textAppearanceLarge"
                 android:text="VERDE"
-                android:id="@+id/textView16"
+                android:id="@+id/txtColor"
                 android:layout_gravity="center_horizontal"
                 android:textSize="80dp"
                 android:layout_weight="5" />
@@ -153,18 +154,21 @@
             <ImageView
                 android:layout_width="50dp"
                 android:layout_height="100dp"
-                android:id="@+id/imageView6"
+                android:id="@+id/btnTrue"
                 android:src="@drawable/check"
                 android:layout_weight="1"
-                android:layout_marginTop="5dp" />
+                android:layout_marginTop="5dp"
+                android:clickable="true"
+                android:onClick="BotonTrue" />
 
             <ImageView
                 android:layout_width="50dp"
                 android:layout_height="100dp"
-                android:id="@+id/imageView7"
+                android:id="@+id/btnFlase"
                 android:src="@drawable/wrong"
                 android:layout_weight="1"
-                android:layout_marginTop="5dp" />
+                android:layout_marginTop="5dp"
+                android:onClick="BotonFalse" />
         </LinearLayout>
 
     </LinearLayout>
